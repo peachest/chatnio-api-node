@@ -16,9 +16,9 @@
     "removeComments": true,
     "noEmitOnError": true,
     "strict": true,
-    "outDir": "./dist",
+    "outDir": "./dist"
   },
   "exclude": [
     "node_modules"
-  ],
+  ]
 }

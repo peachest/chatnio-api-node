@@ -1,0 +1,27 @@
+{
+    "include": [
+        "./**/*.js",
+        "./**/*.cjs",
+        "./**/*.mjs",
+        "./**/*.jsx",
+        "./**/*.ts",
+        "./**/*.tsx",
+        "./**/*.json"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist/",
+    ],
+    "compilerOptions": {
+        "strict": true,
+        "rootDir": "./src",
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
+    }
+}
