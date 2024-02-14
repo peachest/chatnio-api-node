@@ -3,14 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getPackage = exports.buySubscription = exports.getSubscription = exports.buyQuota = exports.getQuota = exports.deleteConversation = exports.getConversation = exports.getConversations = exports.Chat = exports.setEndpoint = exports.setKey = exports.client = void 0;
 const axios_1 = require("axios");
 exports.client = axios_1.default.create({
-    baseURL: 'https://api.chatnio.net',
+    baseURL: "https://api.chatnio.net",
     headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-    }
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    },
 });
 function setKey(key) {
-    exports.client.defaults.headers['Authorization'] = `Bearer ${key}`;
+    exports.client.defaults.headers.Authorization = `Bearer ${key}`;
 }
 exports.setKey = setKey;
 function setEndpoint(url) {
