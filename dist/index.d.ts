@@ -1,4 +1,4 @@
-declare module 'chatnio' {
+declare module 'chatnio-node' {
   export type Message = {
     role: string;
     message: string;
